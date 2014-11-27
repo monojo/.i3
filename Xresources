@@ -1,0 +1,71 @@
+!term*faceName:				Terminus:style=bold:size=12
+!xterm*faceName: Bitstream Vera Serif Mono:bold
+!xterm*faceName: Meslo LG L for Powerline:bold
+!xterm*faceName: Source Code Pro for Powerline
+!xterm*faceName: DejaVu Sans Mono for Powerline:bold
+xterm*faceName: Droid Sans Mono for Powerline
+!xterm*faceName: Ubuntu Mono Derivative Powerline:bold
+
+xterm*faceSize: 12
+!xterm*boldMode: true
+xterm*vt100*geometry: 80x25
+xterm*saveLines: 500000
+xterm*loginShell: true
+xterm*charClass: 33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48
+xterm*termName: xterm-color
+xterm*eightBitInput: false
+
+!BLK Cursor
+#define _color0        #000000
+#define _color8        #000000
+!RED Tag
+#define _color1        #f2433d
+#define _color9        #f2433d
+!GRN SpecialKey
+#define _color2        #9be14f
+#define _color10       #9be14f
+!YEL Keyword
+#define _color3        #fce96b
+#define _color11       #fce96b
+!BLU Number
+#define _color4        #85b0d7
+#define _color12       #85b0d7
+!MAG Precondit
+#define _color5        #bb95b6
+#define _color13       #bb95b6
+!CYN Float
+#define _color6        #44e5e7
+#define _color14       #44e5e7
+!WHT Search
+#define _color7        #f6f6f6
+#define _color15       #f6f6f6
+!FMT Include, StatusLine, ErrorMsg
+#define _colorBD       #ffcfaf
+#define _colorUL       #ccdc90
+#define _colorIT       #80d4aa
+!TXT Normal, Normal, Cursor
+#define _foreground    #c0c0c0
+#define _background    #000000
+#define _cursorColor   #ffffff
+xterm*color0         : _color0
+xterm*color1         : _color1
+xterm*color2         : _color2
+xterm*color3         : _color3
+xterm*color4         : _color4
+xterm*color5         : _color5
+xterm*color6         : _color6
+xterm*color7         : _color7
+xterm*color8         : _color8
+xterm*color9         : _color9
+xterm*color10        : _color10
+xterm*color11        : _color11
+xterm*color12        : _color12
+xterm*color13        : _color13
+xterm*color14        : _color14
+xterm*color15        : _color15
+xterm*colorBD        : _colorBD
+xterm*colorIT        : _colorIT
+xterm*colorUL        : _colorUL
+xterm*foreground     : _foreground
+xterm*background     : _background
+xterm*cursorColor    : _cursorColor
