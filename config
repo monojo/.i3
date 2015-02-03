@@ -152,5 +152,5 @@ bar {
 		workspace_buttons yes
 		mode hide
 		modifier $mod
-		position top
+		position bottom
 }
