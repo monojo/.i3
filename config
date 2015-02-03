@@ -47,6 +47,9 @@ bindsym $mod+Right focus right
 bindsym $mod+Up exec xbacklight -inc 5
 bindsym $mod+Down exec xbacklight -dec 5
 
+#wifi connection control
+exec --no-startup-id nm-applet
+
 # move focused window
 bindsym $mod+Shift+H move left
 bindsym $mod+Shift+J move down
