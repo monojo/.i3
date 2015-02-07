@@ -21,7 +21,7 @@ font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 floating_modifier $mod
 
 #window border 1 pixel
-new_window 1pixel 
+new_window pixel 2
 
 # start a terminal
 #bindsym $mod+t exec uxterm
