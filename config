@@ -28,7 +28,7 @@ new_window pixel 2
 bindsym $mod+t exec i3-sensible-terminal
 
 # kill focused window
-bindsym $mod+w kill
+bindsym $mod+q kill
 
 # start dmenu (a program launcher)
 bindsym $mod+m exec dmenu_run
