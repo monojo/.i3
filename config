@@ -11,6 +11,7 @@
 
 #set window key as mod
 #set $mod Mod4
+
 #set alt key as mod
 set $mod Mod1
 
