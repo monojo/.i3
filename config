@@ -51,6 +51,9 @@ bindsym $mod+Down exec xbacklight -dec 5
 #wifi connection control
 exec --no-startup-id nm-applet
 
+#screen resolution
+exec --no-startup-id $HOME/.i3/resolution.sh 
+
 # move focused window
 bindsym $mod+Shift+H move left
 bindsym $mod+Shift+J move down
