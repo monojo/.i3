@@ -52,7 +52,7 @@ bindsym $mod+Down exec xbacklight -dec 5
 exec --no-startup-id nm-applet
 
 #screen resolution
-exec --no-startup-id $HOME/.i3/resolution.sh 
+#exec --no-startup-id $HOME/.i3/resolution.sh 
 
 # move focused window
 bindsym $mod+Shift+H move left
@@ -126,6 +126,13 @@ bindsym $mod+Shift+R restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+E exit
 
+# control brightness
+bindsym XF86MonBrightnessUp exec xbacklight -inc 10
+bindsym XF86MonBrightnessDown exec xbacklight -dec 10
+
+# control volume
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5%
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -- -5%
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
