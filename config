@@ -15,6 +15,9 @@
 #set alt key as mod
 set $mod Mod1
 
+#set control key as mod
+#set $mod Control
+
 # font for window titles. ISO 10646 = Unicode
 font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 
@@ -22,7 +25,7 @@ font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 floating_modifier $mod
 
 #window border 1 pixel
-new_window pixel 2
+new_window pixel 4
 
 # start a terminal
 #bindsym $mod+t exec uxterm
@@ -54,6 +57,10 @@ exec --no-startup-id nm-applet
 #screen resolution
 #exec --no-startup-id $HOME/.i3/resolution.sh 
 
+#pinyin input
+exec fcitx-autostart
+exec /home/moslab/.screenlayout/screen.sh
+
 # move focused window
 bindsym $mod+Shift+H move left
 bindsym $mod+Shift+J move down
@@ -68,6 +75,7 @@ bindsym $mod+Shift+Right move right
 
 # lock screen
 bindsym control+$mod+l exec i3lock -n -t -i ~/.i3/screen.png
+#bindsym Alt+$mod+l exec i3lock -n -t -i ~/.i3/screen.png
 # split in horizontal orientation
 bindsym $mod+s split h
 
@@ -118,6 +126,10 @@ bindsym $mod+Shift+ampersand move container to workspace 7
 bindsym $mod+Shift+asterisk move container to workspace 8
 bindsym $mod+Shift+parenleft move container to workspace 9
 bindsym $mod+Shift+parenright move container to workspace 10
+
+#default window
+workspace 1 output DP2 
+workspace 2 output DP1 
 
 # reload the configuration file
 bindsym $mod+Shift+C reload
