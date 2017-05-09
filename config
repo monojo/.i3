@@ -59,7 +59,10 @@ exec --no-startup-id nm-applet
 
 #pinyin input
 exec fcitx-autostart
-exec /home/moslab/.screenlayout/screen.sh
+#multiscreen layout
+#exec /home/moslab/.screenlayout/screen.sh
+#dropbox
+exec --no-startup-id dropbox start
 
 # move focused window
 bindsym $mod+Shift+H move left
