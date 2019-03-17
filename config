@@ -35,7 +35,8 @@ bindsym $mod+t exec i3-sensible-terminal
 bindsym $mod+w kill
 
 # start dmenu (a program launcher)
-bindsym $mod+m exec dmenu_run
+#bindsym $mod+m exec dmenu_run
+bindsym $mod+m exec i3-dmenu-desktop
 
 # change focus
 bindsym $mod+h focus left
@@ -51,18 +52,6 @@ bindsym $mod+Right focus right
 bindsym $mod+Up exec xbacklight -inc 5
 bindsym $mod+Down exec xbacklight -dec 5
 
-#wifi connection control
-exec --no-startup-id nm-applet
-
-#screen resolution
-exec --no-startup-id $HOME/.screenlayout/screen_layout.sh
-
-#pinyin input
-exec fcitx-autostart
-#multiscreen layout
-#exec /home/moslab/.screenlayout/screen.sh
-#dropbox
-exec --no-startup-id dropbox start
 
 # move focused window
 bindsym $mod+Shift+H move left
@@ -148,6 +137,24 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 10
 # control volume
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5%
 bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -- -5%
+
+#wifi connection control
+exec --no-startup-id nm-applet
+
+#screen resolution
+exec --no-startup-id $HOME/.screenlayout/screen_layout.sh
+#multiscreen layout
+#exec /home/moslab/.screenlayout/screen.sh
+#dropbox
+exec --no-startup-id dropbox start
+#pinyin input
+#exec fcitx-autostart
+exec --no-startup-id fcitx -d
+# trasparency terminal
+exec --no-startup-id compton
+# set wallpaper
+exec --no-startup-id feh --bg-fill ~/.cache/apod/2019-03-15-A\ View\ Toward\ M101.jpg
+
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
