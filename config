@@ -153,7 +153,7 @@ exec --no-startup-id fcitx -d
 # trasparency terminal
 exec --no-startup-id compton
 # set wallpaper
-exec --no-startup-id feh --bg-fill ~/Pictures/PIA20057-1600x1200.jpg
+exec --no-startup-id feh --bg-fill ./2019-03-15-A\ View\ Toward\ M101.jpg
 # auto mount disk
 exec --no-startup-id udiskie
 # resize window (you can also use the mouse for that)
