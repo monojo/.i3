@@ -62,10 +62,12 @@ bindsym $mod+Shift+K move up
 bindsym $mod+Shift+L move right
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
+# Comment out this since it conflicts with my primary pdf reader "Okular"'s
+# shortcuts
+#bindsym $mod+Shift+Left move left
+#bindsym $mod+Shift+Down move down
+#bindsym $mod+Shift+Up move up
+#bindsym $mod+Shift+Right move right
 
 # lock screen
 bindsym control+$mod+l exec i3lock -n -t -i ~/.i3/screen.png
